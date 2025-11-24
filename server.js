@@ -13,7 +13,7 @@ const app = express();
 // Middleware
 // Middleware
 app.use(cors({
-  origin: ['http://localhost:3000', 'https://your-app-name.vercel.app'],
+  origin: '*',  // Allow all origins for now
   credentials: true
 }));
 app.use(express.json());
